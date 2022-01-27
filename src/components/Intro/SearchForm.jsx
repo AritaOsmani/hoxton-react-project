@@ -10,10 +10,10 @@ export default function SearchForm({ setSearch }) {
             event.preventDefault()
             const searchVal = event.target.search.value;
             setSearch(searchVal)
-            navigate('/main')
+            navigate(`/home/${searchVal}`)
             event.target.reset()
         }}>
-        <input name='search' type="text" placeholder='Search...' required />
+        <input name='search' type="text" placeholder='Search for a city...' required />
         <button className='search-btn'><i className="fal fa-search"></i></button>
     </form>
 }

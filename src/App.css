@@ -149,3 +149,7 @@ input::placeholder{
   font-size: 14px;
   /* border: solid 1px black; */
 }
+.selected-btn{
+  color:red;
+ 
+}

@@ -8,7 +8,7 @@ export default function CurrentWeather({ weatherData, isCelcius, setIsCelcius })
         <h1>{`${locationData.name}, ${locationData.country}`}</h1>
         <div className='temp-info'>
             <img className='icon' src={currentData.condition.icon} alt="" />
-            <span className='temp'>{isCelcius ? currentData['temp_c'] : currentData['temp_f']}</span>
+            <span className='temp'>{isCelcius ? `${currentData['temp_c']}°` : `${currentData['temp_f']}°`}</span>
             <div className='button-container'>
                 <button className={isCelcius ? 'selected-btn' : 'celcius-btn'} onClick={() => {
                     setIsCelcius(true)
@@ -24,7 +24,7 @@ export default function CurrentWeather({ weatherData, isCelcius, setIsCelcius })
         <span className='condition-text'>{currentData.condition.text}</span>
         <span className='time-since-updated'> <b>Last updated:</b> {currentData['last_updated']}</span>
         <div className='additional-info'>
-            <span> <b>Feels like:</b> {currentData['feelslike_c']}</span>
+            <span> <b>Feels like:</b> {isCelcius ? `${currentData['feelslike_c']}°` : `${currentData['feelslike_f']}°`}</span>
             <span> <b>Wind:</b> {currentData['wind_kph']} km/h</span>
             <span> <b>Visibility:</b> {currentData['vis_km']}km</span>
             <span> <b>Humidity:</b> {currentData.humidity}%</span>

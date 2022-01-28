@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route index element={<Navigate replace to='/home' />} />
         <Route path='/home' element={<Intro setSearch={setSearch} />}></Route>
-        <Route path='/home/:search' element={<Main weatherData={weatherData} />} />
+        <Route path='/home/:search' element={<Main weatherData={weatherData} search={search} />} />
       </Routes>
     </div>
   )

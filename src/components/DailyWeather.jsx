@@ -8,7 +8,7 @@ export default function DailyWeather({ weatherData, isCelcius }) {
     return <div className='dailyweather-container'>
         <h2>Daily</h2>
         <ul>
-            {forecastData.forecastday.map(day => <DayComponent currentDay={day} isCelcius={isCelcius} />)}
+            {forecastData.forecastday.map((day, index) => <DayComponent key={index} currentDay={day} isCelcius={isCelcius} />)}
 
         </ul>
     </div>;

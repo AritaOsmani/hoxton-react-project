@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import CurrentWeather from '../components/CurrentWeather';
 import DailyWeather from '../components/DailyWeather';
+import HourlyWeather from '../components/HourlyWeather';
 
 export default function Main({ weatherData, search }) {
 
@@ -21,6 +22,6 @@ export default function Main({ weatherData, search }) {
     return <div className='main-container'>
         <CurrentWeather weatherData={weatherData} isCelcius={isCelcius} setIsCelcius={setIsCelcius} />
         <DailyWeather weatherData={weatherData} isCelcius={isCelcius} />
-
+        <HourlyWeather weatherData={weatherData} isCelcius={isCelcius} />
     </div>;
 }

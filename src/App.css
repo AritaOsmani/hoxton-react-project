@@ -40,6 +40,9 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+li{
+  list-style: none;
+}
 
 
 /* Intro page */
@@ -197,4 +200,38 @@ input::placeholder{
 }
 .text{
   font-size: 14px;
+}
+
+.hourlyWeather-container{
+  border:solid 1px black;
+  justify-self: start;
+  width: 100vw;
+}
+
+.hourlyWeather-container ul{
+  display: grid;
+  grid-template-columns: repeat(6,200px);
+  place-content: center;
+}
+.hourDetails-container{
+  display: grid;
+  place-items: center;
+  border:solid 1px black;
+  padding:10px;
+  gap:5px;
+}
+.hour-temp{
+  font-size:30px;
+}
+.hour-text{
+  font-size: 17px;
+  color:#343A40;
+}
+.p-info,.wind-info{
+  font-size: 12px;
+  color:#316B83;
+}
+.time{
+  font-size: 17px;
+  font-weight: 500;
 }

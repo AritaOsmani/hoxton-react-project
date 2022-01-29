@@ -101,9 +101,11 @@ li{
   height:100vh;
   /* background-color: pink; */
   display: grid;
-  grid-auto-columns: auto;
+  /* grid-auto-columns: auto; */
   place-items: center;
   gap:10px;
+  width: 100vw;
+  
 }
 /* Current Weather Component */
 .current-container{
@@ -274,4 +276,37 @@ li{
 .time{
   font-size: 17px;
   font-weight: 500;
+}
+
+.main-header{
+  width: 100vw;
+  border: solid 1px black;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: start;
+  height: 40px;
+  padding:20px;
+  background-color: #1A374D;
+  color:white;
+  overflow: hidden;
+
+}
+
+.header-form{
+  display: grid;
+  place-content: center;
+  justify-self: end;
+  padding:10px 60px;
+  margin-right:50px;
+}
+.header-form input{
+  margin-top:10px;
+  background-color: unset;
+  color:white;
+  border:none;
+  border-bottom: solid 1px white;
+  outline: none;
+}
+.header-form input::placeholder{
+  color:white;
 }

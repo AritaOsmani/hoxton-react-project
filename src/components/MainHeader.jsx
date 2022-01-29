@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function MainHeader({ setSearch }) {
     const navigate = useNavigate()
-    return <div>
+    return <div className='main-header'>
+        <h3>WeatherApp</h3>
         <form action="" className='header-form'
             onSubmit={event => {
                 event.preventDefault()

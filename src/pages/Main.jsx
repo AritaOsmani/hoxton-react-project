@@ -3,8 +3,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 import CurrentWeather from '../components/CurrentWeather';
 import DailyWeather from '../components/DailyWeather';
 import HourlyWeather from '../components/HourlyWeather';
+import MainHeader from '../components/MainHeader';
 
-export default function Main({ weatherData, search }) {
+export default function Main({ weatherData, search, setSearch }) {
 
     const params = useParams()
     const navigate = useNavigate()
@@ -20,6 +21,7 @@ export default function Main({ weatherData, search }) {
     if (weatherData === null) return <h1>Loading...</h1>
 
     return <div className='main-container'>
+        <MainHeader setSearch={setSearch} />
         <CurrentWeather weatherData={weatherData} isCelcius={isCelcius} setIsCelcius={setIsCelcius} />
         <DailyWeather weatherData={weatherData} isCelcius={isCelcius} />
         <HourlyWeather weatherData={weatherData} isCelcius={isCelcius} />

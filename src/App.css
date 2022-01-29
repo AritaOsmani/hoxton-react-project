@@ -79,7 +79,7 @@ li{
   outline: none;
   font-size:20px;
 }
-input::placeholder{
+.search-form input::placeholder{
   color:white;
   padding:10px;
 }
@@ -103,6 +103,7 @@ input::placeholder{
   display: grid;
   grid-auto-columns: auto;
   place-items: center;
+  gap:10px;
 }
 /* Current Weather Component */
 .current-container{
@@ -206,19 +207,57 @@ input::placeholder{
   border:solid 1px black;
   justify-self: start;
   width: 100vw;
+  display: grid;
+  place-content: center;
+  position: relative;
 }
+
 
 .hourlyWeather-container ul{
   display: grid;
-  grid-template-columns: repeat(6,200px);
-  place-content: center;
+  /* grid-template-columns: repeat(4,200px); */
+  grid-auto-flow: column;
+  overflow: scroll;
+  width:85vw;
+  padding:20px;
+  
+}
+.prev-btn{
+  width: 70px;
+  position: absolute;
+  top:250px;
+  left:0;
+  /* height: */
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+.next-btn{
+  width: 70px;
+  position: absolute;
+  top:250px;
+  right:0;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+.prev-btn,.next-btn i{
+  font-size: 14px;
+}
+/* .hourlyWeather-container ul:hover{
+  overflow-x: auto;
+} */
+.ul-container::-webkit-scrollbar{
+  visibility: hidden;
 }
 .hourDetails-container{
   display: grid;
+  grid-template-rows: auto auto 80px auto auto;
   place-items: center;
-  border:solid 1px black;
+  border:solid 1px rgba(0, 0, 0, 0.3);
   padding:10px;
   gap:5px;
+  grid-auto-columns: 100px;
 }
 .hour-temp{
   font-size:30px;
@@ -226,6 +265,7 @@ input::placeholder{
 .hour-text{
   font-size: 17px;
   color:#343A40;
+  
 }
 .p-info,.wind-info{
   font-size: 12px;

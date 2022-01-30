@@ -361,3 +361,41 @@ li{
 .header-form input::placeholder{
   color:white;
 }
+
+/* Daily details Component */
+.dailyDetails-container{
+  border:solid 1px black;
+  padding:20px;
+  display: grid;
+  gap:10px;
+}
+.astro-info-container{
+  display: grid;
+  grid-auto-flow: column;
+ place-content: start;
+ gap:20px;
+}
+.sunInfo-container{
+  border:solid 1px black;
+  width:350px;
+  display: grid;
+  gap:20px;
+  place-items: start;
+  padding:30px;
+}
+.sunrise-title,.sunset-title{
+  font-size: 17px;
+  font-weight: 700;
+}
+.fa-sunrise,.fa-sunset{
+  font-size:45px;
+}
+.sunrise-sunset-time{
+  font-size: 20px;
+}
+.sunrise,.sunset{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  place-items: center;
+  gap:20px;
+}

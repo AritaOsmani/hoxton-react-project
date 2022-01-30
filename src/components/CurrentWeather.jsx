@@ -10,14 +10,14 @@ export default function CurrentWeather({ weatherData, isCelcius, setIsCelcius })
             <img className='icon' src={currentData.condition.icon} alt="" />
             <span className='temp'>{isCelcius ? `${currentData['temp_c']}°` : `${currentData['temp_f']}°`}</span>
             <div className='button-container'>
-                <button className={isCelcius ? 'selected-btn' : 'celcius-btn'} onClick={() => {
+                <button className={isCelcius ? 'selected-btn' : (weatherData.current['is_day']) ? 'celcius-btn' : 'celcius-btn night-button'} onClick={() => {
                     setIsCelcius(true)
                 }}
                 >C</button>
                 <button onClick={() => {
                     setIsCelcius(false)
                 }}
-                    className={isCelcius ? 'fahrenheit-btn' : 'selected-btn'}>F</button>
+                    className={isCelcius ? (weatherData.current['is_day']) ? 'fahrenheit-btn' : 'fahrenheit-btn night-button' : 'selected-btn'}>F</button>
             </div>
 
         </div>

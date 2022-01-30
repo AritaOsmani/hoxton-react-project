@@ -128,7 +128,7 @@ li{
 /* Current Weather Component */
 .current-container{
   display:grid;
-  border:solid 1px black;
+  /* border:solid 1px black; */
   place-items: center;
   width: 800px;
   justify-self: center;
@@ -164,6 +164,9 @@ li{
   background-color: unset;
   
 }
+.night-button{
+  color:white
+}
 .condition-text{
   font-size: 40px;
 }
@@ -181,13 +184,21 @@ li{
  
 }
 
+
 /* Daily weather component */
 .dailyweather-container{
-  border:solid 1px black;
+  /* border:solid 1px black; */
   justify-self: start;
   width: 95vw;
-  
+  border-top: solid 1px rgba(0, 0,0, 0.3);
+  border-bottom: solid 1px rgba(0, 0,0, 0.3);
+  padding:15px;
 }
+.dailyweather-night{
+  border-top: solid 1px rgba(255, 255,255, 0.3);
+  border-bottom: solid 1px rgba(255, 255,255, 0.3);
+}
+
 .dailyweather-container ul{
   display: grid;
   grid-template-columns: repeat(auto-fit,200px);
@@ -201,15 +212,19 @@ li{
 }
 
 .dayDetails-container{
-  border:solid 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 8px  #888888;
+  border:solid 3px rgba(0, 0, 0, 0.3);
+  
+  /* box-shadow: 5px 5px 8px  #888888; */
   display: grid;
   grid-template-rows: 20px auto auto 40px;
   place-items: center;
-  padding:10px;
+  padding:20px;
   gap: 5px;
   border-radius: 5px;
 
+}
+.dayDetails-night{
+  border:solid 3px rgba(255, 255, 255, 0.3);
 }
 .degree-container{
   display: grid;
@@ -225,12 +240,13 @@ li{
 }
 
 .hourlyWeather-container{
-  border:solid 1px black;
+  /* border-top:solid 1px black; */
   justify-self: start;
   width: 95vw;
   display: grid;
   place-content: center;
   position: relative;
+  padding:15px;
 }
 
 
@@ -265,6 +281,9 @@ li{
 .prev-btn,.next-btn i{
   font-size: 14px;
 }
+.prev-icon,.next-icon{
+  color:white;
+}
 /* .hourlyWeather-container ul:hover{
   overflow-x: auto;
 } */
@@ -276,9 +295,13 @@ li{
   grid-template-rows: auto auto 80px auto auto;
   place-items: center;
   border:solid 1px rgba(0, 0, 0, 0.3);
+  
   padding:10px;
   gap:5px;
   grid-auto-columns: 100px;
+}
+.hourDetails-night{
+  border:solid 1px rgba(255, 255, 255, 0.3);
 }
 .hour-temp{
   font-size:30px;
@@ -287,6 +310,9 @@ li{
   font-size: 17px;
   color:#343A40;
   
+}
+.hour-text-night{
+  color:#D3DEDC;
 }
 .p-info,.wind-info{
   font-size: 12px;

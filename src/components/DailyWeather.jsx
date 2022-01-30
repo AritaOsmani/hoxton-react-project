@@ -5,10 +5,16 @@ export default function DailyWeather({ weatherData, isCelcius }) {
 
     const forecastData = weatherData.forecast
 
-    return <div className='dailyweather-container'>
+    return <div className={weatherData.current['is_day'] ? 'dailyweather-container' : 'dailyweather-container dailyweather-night'}>
         <h2>Daily</h2>
         <ul>
-            {forecastData.forecastday.map((day, index) => <DayComponent key={index} currentDay={day} isCelcius={isCelcius} />)}
+            {forecastData.forecastday.map((day, index) =>
+                <DayComponent
+                    key={index}
+                    currentDay={day}
+                    isCelcius={isCelcius}
+                    weatherData={weatherData}
+                />)}
 
         </ul>
     </div>;

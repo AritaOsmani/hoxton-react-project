@@ -23,7 +23,7 @@ export default function HourlyWeather({ weatherData, isCelcius }) {
     return <div className='hourlyWeather-container'>
         <h2>Hourly</h2>
         <ul className='ul-container'>
-            {hourData.map(hour => <HourComponent hour={hour} isCelcius={isCelcius} />)}
+            {hourData.map(hour => <HourComponent hour={hour} isCelcius={isCelcius} weatherData={weatherData} />)}
 
 
         </ul>
@@ -31,9 +31,9 @@ export default function HourlyWeather({ weatherData, isCelcius }) {
             slide('left')
 
         }}
-            className='prev-btn'><i className="fas fa-chevron-left"></i></button>
+            className='prev-btn'><i className={weatherData.current['is_day'] ? "fas fa-chevron-left" : "fas fa-chevron-left prev-icon"}></i></button>
         <button onClick={() => {
             slide('right')
-        }} className='next-btn'><i className="fas fa-chevron-right"></i></button>
+        }} className='next-btn'><i className={weatherData.current['is_day'] ? "fas fa-chevron-right" : "fas fa-chevron-right next-icon"}></i></button>
     </div>;
 }

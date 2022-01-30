@@ -8,7 +8,7 @@ function App() {
 
   const [search, setSearch] = useState('')
   const [weatherData, setWeatherData] = useState(null)
-  // const [currentLocation, setCurrentLocation] = useState('')
+
 
   useEffect(() => {
     if (search === '') return

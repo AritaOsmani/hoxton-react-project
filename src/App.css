@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+ height: 100vh;
+ width: 100vw;
 }
 
 .App-logo {
@@ -98,14 +100,30 @@ li{
 }
 
 .main-container{
-  height:100vh;
+  /* height:100%; */
+  /* width: 100vw; */
   /* background-color: pink; */
   display: grid;
   /* grid-auto-columns: auto; */
-  place-items: center;
+  place-content: center;
   gap:10px;
-  width: 100vw;
+
+ 
+  padding: 10px;
+ 
   
+}
+.day{
+  background:url('https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: cover;
+  color:black;
+  
+}
+.night{
+  /* background:url('https://images.pexels.com/photos/7477/night-trees-stars.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: cover; */
+  background-color: #041C32;
+  color:white;
 }
 /* Current Weather Component */
 .current-container{
@@ -113,6 +131,7 @@ li{
   border:solid 1px black;
   place-items: center;
   width: 800px;
+  justify-self: center;
 }
 
 .temp-info{
@@ -166,7 +185,7 @@ li{
 .dailyweather-container{
   border:solid 1px black;
   justify-self: start;
-  width: 100vw;
+  width: 95vw;
   
 }
 .dailyweather-container ul{
@@ -208,7 +227,7 @@ li{
 .hourlyWeather-container{
   border:solid 1px black;
   justify-self: start;
-  width: 100vw;
+  width: 95vw;
   display: grid;
   place-content: center;
   position: relative;
@@ -227,7 +246,7 @@ li{
 .prev-btn{
   width: 70px;
   position: absolute;
-  top:250px;
+  top:200px;
   left:0;
   /* height: */
   border: none;
@@ -237,7 +256,7 @@ li{
 .next-btn{
   width: 70px;
   position: absolute;
-  top:250px;
+  top:200px;
   right:0;
   border: none;
   background-color: unset;

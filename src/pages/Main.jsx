@@ -21,10 +21,11 @@ export default function Main({ weatherData, search, setSearch }) {
     if (weatherData === null) return <h1>Loading...</h1>
 
     return <div className={weatherData.current['is_day'] === 1 ? `main-container day` : `main-container night`}>
-        {/* <MainHeader setSearch={setSearch} /> */}
+        <MainHeader setSearch={setSearch} />
         <CurrentWeather weatherData={weatherData} isCelcius={isCelcius} setIsCelcius={setIsCelcius} />
         <DailyWeather weatherData={weatherData} isCelcius={isCelcius} />
         <HourlyWeather weatherData={weatherData} isCelcius={isCelcius} />
+
 
     </div>;
 }

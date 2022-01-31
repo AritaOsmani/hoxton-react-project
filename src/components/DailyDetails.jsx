@@ -8,7 +8,7 @@ export default function DailyDetails({ weatherData }) {
         <h2>Daily Details</h2>
         <div className='astro-info-container'>
             <SunInfo astroInfo={astroInfo} />
-            <MoonInfo />
+            <MoonInfo astroInfo={astroInfo} />
         </div>
 
     </div>;

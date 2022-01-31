@@ -384,13 +384,14 @@ li{
   padding:30px;
 }
 .sunrise-title,.sunset-title{
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
 }
 .fa-sunrise,.fa-sunset{
   font-size:45px;
+  color:#95A5A6;
 }
-.sunrise-sunset-time{
+.sunrise-sunset-time,.moonrise-moonset-time{
   font-size: 20px;
 }
 .sunrise,.sunset{
@@ -398,4 +399,36 @@ li{
   grid-template-columns: repeat(2,auto);
   place-items: center;
   gap:20px;
+}
+
+.moonInfo-container{
+  border: solid 1px black;
+  width: 350px;
+  display: grid;
+  gap:20px;
+  place-items: start;
+  padding:30px;
+}
+.moonrise-moonset-title{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.moon-icon{
+  width:50px;
+}
+.moon-rise,.moon-set{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  place-items: center;
+  gap:20px;
+}
+.moon-phase{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  place-items: center;
+  gap:20px;
+}
+.moon-phase img{
+  width: 40px;
 }

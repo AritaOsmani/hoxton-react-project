@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function MoonInfo({ astroInfo }) {
+export default function MoonInfo({ astroInfo, currentData }) {
 
     const moonPhase = [
         {
@@ -42,7 +42,7 @@ export default function MoonInfo({ astroInfo }) {
         return moonPhaseIcon.icon
     }
 
-    return <div className='moonInfo-container'>
+    return <div className={currentData['is_day'] ? 'moonInfo-container' : 'moonInfo-container night-border'}>
         <span className='moonrise-moonset-title'>Moonrise</span>
         <div className='moon-rise'>
             <img className='moon-icon' src="https://cdn-user-icons.flaticon.com/55925/55925575/1643644631506.svg?token=exp=1643645532~hmac=241d4f46d96d16f5cb69db962a32b269" alt="" />

@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function SunInfo({ astroInfo }) {
-    return <div className='sunInfo-container'>
+export default function SunInfo({ astroInfo, currentData }) {
+    return <div className={currentData['is_day'] ? 'sunInfo-container' : 'sunInfo-container night-border'}>
         <span className='sunrise-title'>Sunrise</span>
         <div className='sunrise'>
             <i className="fal fa-sunrise"></i>

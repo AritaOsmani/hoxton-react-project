@@ -19,6 +19,8 @@
    display: grid;
    gap:30px;
    place-items: center;
+   overflow: auto;
+   height: 500px;
 }
 .alert-info{
     padding:20px;

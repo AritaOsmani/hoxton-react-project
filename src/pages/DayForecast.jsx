@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState } from 'react/cjs/react.development';
+import Alert from '../components/Alert';
 import DailyDetails from '../components/DailyDetails';
 import HourlyWeather from '../components/HourlyWeather';
 
@@ -25,6 +26,7 @@ export default function DayForecast({ isCelcius, setIsCelcius }) {
     let dayName = days[date.getDay()]
 
     return <div className='daily-forecast'>
+        {weatherDate.alerts.alert.length !== 0 && (weatherDate.alerts.alert.map(alert => <Alert alert={alert} />))}
         <div className='main-info'>
             <span className='date'> <b>{dayName}</b> {` `} {forecastData.date}</span>
             <div className='temp-info'>

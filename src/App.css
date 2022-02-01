@@ -542,6 +542,7 @@ li{
   gap:20px;
   padding: 2px 0;
   margin-bottom: 10px;
+  width: 100%;
 }
 .alert-container i{
   font-size: 15px;

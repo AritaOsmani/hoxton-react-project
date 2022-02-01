@@ -6,11 +6,11 @@ import DailyWeather from '../components/DailyWeather';
 import HourlyWeather from '../components/HourlyWeather';
 import MainHeader from '../components/MainHeader';
 
-export default function Main({ weatherData, search, setSearch }) {
+export default function Main({ weatherData, search, setSearch, isCelcius, setIsCelcius }) {
 
     const params = useParams()
     const navigate = useNavigate()
-    const [isCelcius, setIsCelcius] = useState(true)
+
 
     useEffect(() => {
         if (search === '') {
@@ -24,7 +24,7 @@ export default function Main({ weatherData, search, setSearch }) {
     return <div className={weatherData.current['is_day'] === 1 ? `main-container day` : `main-container night`}>
         <MainHeader setSearch={setSearch} />
         <CurrentWeather weatherData={weatherData} isCelcius={isCelcius} setIsCelcius={setIsCelcius} />
-        <DailyWeather weatherData={weatherData} isCelcius={isCelcius} />
+        <DailyWeather weatherData={weatherData} isCelcius={isCelcius} search={search} />
         <HourlyWeather weatherData={weatherData} isCelcius={isCelcius} />
         <DailyDetails weatherData={weatherData} />
 

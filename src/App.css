@@ -179,6 +179,9 @@ li{
   font-size: 14px;
   /* border: solid 1px black; */
 }
+
+
+
 .selected-btn{
   color:red;
  
@@ -222,6 +225,7 @@ li{
   gap: 5px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 .dayDetails-night{
   border:solid 3px rgba(255, 255, 255, 0.3);
@@ -478,3 +482,52 @@ li{
 .night-border{
   border-top:solid 1px rgba(255, 255, 255, 0.3);
 }
+
+/* Daily Forecast Page */
+.daily-forecast{
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  gap:30px;
+  background-color: #3c4563;
+  color:white;
+  
+}
+.main-info{
+  display: grid;
+  gap:10px;
+  place-items: center;
+  width: 900px;
+  padding:30px;
+  border-bottom: solid 1px rgba(255, 255, 255,0.3);
+}
+.temp-info{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  gap:10px;
+  place-items: center;
+  padding:20px;
+}
+.temp-info img{
+  width: 150px;
+}
+.date{
+  font-size: 30px;
+}
+.mx-temp{
+  font-size: 100px;
+}
+.mm-temp{
+  font-size: 60px;
+  color:#071034;
+}
+/* .daily-forecast-buttons{
+  display: grid;
+  align-self: start;
+
+}
+.daily-forecast-buttons button{
+  background-color: unset;
+  border:none;
+  color:black;
+} */

@@ -1,12 +1,17 @@
 import React from 'react';
-
-export default function DayComponent({ currentDay, isCelcius, weatherData }) {
+import { useNavigate } from 'react-router-dom';
+export default function DayComponent({ currentDay, isCelcius, weatherData, search }) {
+    const navigate = useNavigate();
     let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     let date = new Date(currentDay.date)
     let dayName = days[date.getDay()]
     let d = new Date(currentDay.date)
 
-    return <li className={weatherData.current['is_day'] ? 'dayDetails-container' : 'dayDetails-container dayDetails-night'}>
+    return <li
+        onClick={() => {
+            navigate(`/day/${search}/${currentDay.date}`)
+        }}
+        className={weatherData.current['is_day'] ? 'dayDetails-container' : 'dayDetails-container dayDetails-night'}>
         <span>{dayName} {d.getDate()}</span>
         <img src={currentDay.day.condition.icon} alt="" />
         <div className='degree-container'>

@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     if (search === '') return
-    fetch(`https://api.weatherapi.com/v1/forecast.json?key=ad30963771034a06809133027222701&q=${search}&days=7`).then(res => res.json()).then(res => setWeatherData(res))
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=ad30963771034a06809133027222701&q=${search}&days=7&alerts=yes`).then(res => res.json()).then(res => setWeatherData(res))
   }, [search])
 
 

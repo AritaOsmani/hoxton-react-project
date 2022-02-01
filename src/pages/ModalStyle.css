@@ -1,0 +1,51 @@
+.modal-wrapper{
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    backdrop-filter: blur(2px);
+}
+
+.alert-modal{
+    background-color:#FF5403;
+    width: 700px;
+    padding:30px;
+   position: relative;
+   display: grid;
+   gap:30px;
+   place-items: center;
+}
+.alert-info{
+    padding:20px;
+   display: grid;
+   gap:20px;
+}
+.close-btn{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size:15px;
+    border: none;
+    background-color: unset;
+    padding:10px;
+    cursor:pointer;
+    color:white;
+}
+.event,.effective,.expires,.desc{
+    display: grid;
+    grid-template-columns: 100px auto;
+    place-content: start;
+    gap:30px;
+}
+.alert-title{
+    font-weight: 700;
+    justify-self: start;
+}
+.alert{
+    text-align: start;
+}

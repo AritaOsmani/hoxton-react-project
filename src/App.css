@@ -531,3 +531,20 @@ li{
   border:none;
   color:black;
 } */
+
+/* Alert Component */
+.alert-container{
+  background-color: #FF5403;
+  color:white;
+  display:grid ;
+  grid-template-columns: auto auto;
+  place-content: center;
+  gap:20px;
+  padding: 2px 0;
+  margin-bottom: 10px;
+}
+.alert-container i{
+  font-size: 15px;
+  margin-top:5px;
+  cursor: pointer;
+}

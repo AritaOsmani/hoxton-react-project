@@ -7,6 +7,30 @@
       "temp": 0,
       "icon": "//cdn.weatherapi.com/weather/64x64/day/323.png",
       "text": "Cloudy"
+    },
+    {
+      "city": "Pristina",
+      "country": "Kosovo",
+      "temp": 4,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+      "text": "Partly cloudy",
+      "id": 2
+    },
+    {
+      "city": "Tirana",
+      "country": "Albania",
+      "temp": 12,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+      "text": "Sunny",
+      "id": 3
+    },
+    {
+      "city": "Washington",
+      "country": "United States of America",
+      "temp": -1.1,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/143.png",
+      "text": "Mist",
+      "id": 4
     }
   ]
 }

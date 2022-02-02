@@ -8,10 +8,19 @@ import HourlyWeather from '../components/HourlyWeather';
 import MainHeader from '../components/MainHeader';
 import '../styles/Main.css'
 
-export default function Main({ weatherData, search, setSearch, isCelcius, setIsCelcius }) {
-
+export default function Main({ search, setSearch, isCelcius, setIsCelcius, searchedCities, setSearchedCities, addNewSearchedCity }) {
+    const [weatherData, setWeatherData] = useState(null)
     const params = useParams()
     const navigate = useNavigate()
+
+    useEffect(() => {
+        if (params.search === '') return
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=ad30963771034a06809133027222701&q=${params.search}&days=7&alerts=yes`).then(res => res.json()).then(res => {
+            setWeatherData(res)
+            addNewSearchedCity(res.location.name, res.location.country, res.current['temp_c'], res.current.condition.icon, res.current.condition.text)
+        })
+    }, [params.search])
+
 
 
     useEffect(() => {

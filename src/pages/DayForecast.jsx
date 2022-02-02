@@ -18,7 +18,7 @@ export default function DayForecast({ isCelcius, setIsCelcius }) {
             navigate('/home')
         }
         fetch(`https://api.weatherapi.com/v1/forecast.json?key=ad30963771034a06809133027222701&q=${params.search}&days=10&aqi=yes&alerts=yes&dt=${params.date}`).then(res => res.json()).then(date => setWeatherDate(date))
-    }, [params])
+    }, [params.search, params.date])
 
     if (weatherDate === null) return <h1>Loading...</h1>
     const forecastData = weatherDate.forecast.forecastday[0];

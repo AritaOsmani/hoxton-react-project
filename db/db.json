@@ -31,6 +31,30 @@
       "icon": "//cdn.weatherapi.com/weather/64x64/day/143.png",
       "text": "Mist",
       "id": 4
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "temp": 7,
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+      "text": "Partly cloudy",
+      "id": 5
+    },
+    {
+      "city": "Texas City",
+      "country": "United States of America",
+      "temp": 15.6,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/248.png",
+      "text": "Fog",
+      "id": 6
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "temp": 11,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+      "text": "Partly cloudy",
+      "id": 7
     }
   ]
 }

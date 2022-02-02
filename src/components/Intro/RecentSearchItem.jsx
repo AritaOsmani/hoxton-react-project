@@ -13,6 +13,6 @@ export default function RecentSearchItem({ citySearched, setSearch }) {
             <span className='recent-current-temp'>{`${citySearched.temp}°`}</span>
             <img src={citySearched.icon} alt="" />
         </div>
-        <span>{citySearched.text}</span>
+        <span className='recent-text'>{citySearched.text}</span>
     </li>
 }

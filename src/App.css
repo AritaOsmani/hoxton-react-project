@@ -396,6 +396,7 @@ li{
 }
 .main-header h2{
   margin-top:5px;
+  cursor: pointer;
 }
 .header-form{
   display: grid;
@@ -448,7 +449,8 @@ li{
 }
 .fa-sunrise,.fa-sunset{
   font-size:45px;
-  color:#95A5A6;
+  /* color:#95A5A6; */
+  color:#406882;
 }
 .sunrise-sunset-time,.moonrise-moonset-time{
   font-size: 20px;

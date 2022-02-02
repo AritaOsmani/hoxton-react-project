@@ -25,14 +25,6 @@
       "id": 5
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "temp": 3,
-      "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
-      "text": "Partly cloudy",
-      "id": 6
-    },
-    {
       "city": "Texas City",
       "country": "United States of America",
       "temp": 21.1,

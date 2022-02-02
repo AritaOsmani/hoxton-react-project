@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../../src/styles/MainHeader.css'
 
 export default function MainHeader({ setSearch }) {
     const navigate = useNavigate()

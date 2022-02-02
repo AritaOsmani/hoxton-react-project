@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react/cjs/react.development';
 import AlertModal from '../pages/AlertModal';
+import '../styles/Alert.css'
 
 export default function Alert({ alert }) {
     const [alertModal, setAlertModal] = useState('')

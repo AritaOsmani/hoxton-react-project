@@ -6,6 +6,7 @@ import DailyDetails from '../components/DailyDetails';
 import DailyWeather from '../components/DailyWeather';
 import HourlyWeather from '../components/HourlyWeather';
 import MainHeader from '../components/MainHeader';
+import '../styles/Main.css'
 
 export default function Main({ weatherData, search, setSearch, isCelcius, setIsCelcius }) {
 

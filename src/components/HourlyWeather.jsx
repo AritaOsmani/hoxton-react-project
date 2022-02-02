@@ -1,6 +1,9 @@
 import React from 'react';
 import HourComponent from './HourComponent';
+import '../../src/styles/HourlyWeather.css'
+
 const container = document.querySelector('.hourlyWeather-container');
+
 export default function HourlyWeather({ weatherData, isCelcius }) {
 
 

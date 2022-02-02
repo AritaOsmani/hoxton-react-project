@@ -1,0 +1,112 @@
+.dailyDetails-container{
+    padding:40px;
+    display: grid;
+    place-items: center;
+    gap:40px;
+  }
+  .astro-info-container{
+    display: grid;
+    grid-auto-flow: column;
+   place-content: start;
+   gap:40px;
+  }
+  .sunInfo-container{
+    border: none;
+    border-top:solid 1px black;
+    width:350px;
+    display: grid;
+    gap:5px;
+    place-items: start;
+    padding:30px;
+  }
+  
+  .sunrise-title,.sunset-title{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .fa-sunrise,.fa-sunset{
+    font-size:45px;
+    color:#406882;
+  }
+  .sunrise-sunset-time,.moonrise-moonset-time{
+    font-size: 20px;
+  }
+  .sunrise,.sunset{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    place-items: center;
+    gap:10px;
+  }
+  
+  .moonInfo-container{
+    border:none;
+    border-top: solid 1px black;
+    width: 350px;
+    display: grid;
+    gap:20px;
+    place-items: start;
+    padding:30px;
+  }
+  .moonrise-moonset-title{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .moon-icon{
+    width:50px;
+  }
+  .moon-rise,.moon-set{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    place-items: center;
+    gap:20px;
+  }
+  .moon-phase{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    place-items: center;
+    gap:20px;
+  }
+  .moon-phase img{
+    width: 40px;
+  }
+  
+  .additional-info-container{
+    border:none;
+    border-top: solid 1px black;
+    width: 350px;
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+  }
+  .precipitation{
+    display: grid;
+    gap:10px;
+    width: 110px;
+    height:110px;
+  }
+  .additional-text{
+    font-weight: 700;
+  }
+  .humidity{
+    display: grid;
+    gap:10px;
+    width: 110px;
+    height:110px;
+  }
+  .uv-index{
+    display: grid;
+    gap:10px;
+    width: 110px;
+    height:110px;
+  }
+  .clouds{
+    display: grid;
+    gap:10px;
+    width: 110px;
+    height:110px;
+  }
+  .night-border{
+    border-top:solid 1px rgba(255, 255, 255, 0.3);
+  }

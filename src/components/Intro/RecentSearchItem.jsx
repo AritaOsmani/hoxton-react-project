@@ -13,7 +13,7 @@ export default function RecentSearchItem({ citySearched, setSearch, deleteSearch
             deleteSearchedCity(citySearched)
         }}
             className='recent__close-btn'>X</button>
-        <span className='city-name'>{`${citySearched.city},${citySearched.country}`}</span>
+        <span className='city-name'>{`${citySearched.city}, ${citySearched.country}`}</span>
         <div className='recent-search-info'>
             <span className='recent-current-temp'>{`${citySearched.temp}°`}</span>
             <img src={citySearched.icon} alt="" />

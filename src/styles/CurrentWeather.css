@@ -1,0 +1,48 @@
+.current-container{
+    display:grid;
+    place-items: center;
+    width: 800px;
+    justify-self: center;
+  }
+  
+  .temp-info{
+    display: grid;
+    grid-template-columns: 100px auto 50px;
+    place-content: center;
+    padding:10px 50px;
+    gap:10px;
+  }
+  .temp{
+    font-size: 120px;
+   }
+  .icon{
+    width: 100px;
+   align-self: center;
+    margin-top:20px;
+   }
+  .button-container{
+    display: grid;
+    align-self: start;
+    }
+  .button-container button{
+    cursor: pointer;
+    border:none;
+    background-color: unset;
+    }
+  .night-button{
+    color:white
+  }
+  .condition-text{
+    font-size: 40px;
+  }
+  
+  .additional-info{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+     padding:30px 50px;
+    font-size: 14px;
+    }
+  .selected-btn{
+    color:red;
+  }
+  

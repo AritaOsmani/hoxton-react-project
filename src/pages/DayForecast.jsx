@@ -4,6 +4,8 @@ import { useState } from 'react/cjs/react.development';
 import Alert from '../components/Alert';
 import DailyDetails from '../components/DailyDetails';
 import HourlyWeather from '../components/HourlyWeather';
+import '../styles/CurrentWeather.css'
+import '../styles/DailyForecast.css'
 
 export default function DayForecast({ isCelcius, setIsCelcius }) {
 

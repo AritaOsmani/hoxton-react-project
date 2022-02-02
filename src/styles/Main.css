@@ -1,0 +1,15 @@
+.main-container{
+    display: grid;
+    place-content: center;
+    gap:10px;
+  }
+  .day{
+    background-color: #b9ceda;
+    color:black;
+  }
+  .night{
+    background-color: #041C32;
+    color:white;
+  }
+ 
+ 

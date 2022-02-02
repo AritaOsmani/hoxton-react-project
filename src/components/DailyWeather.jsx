@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DayComponent from './DayComponent';
+import '../../src/styles/DailyWeather.css'
 
 export default function DailyWeather({ weatherData, isCelcius, search }) {
 

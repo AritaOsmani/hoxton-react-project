@@ -1,4 +1,6 @@
 
+import '../../src/styles/CurrentWeather.css'
+
 export default function CurrentWeather({ weatherData, isCelcius, setIsCelcius }) {
     //  if (weatherData === undefined) return <h1>Loading...</h1>
     const currentData = weatherData.current;

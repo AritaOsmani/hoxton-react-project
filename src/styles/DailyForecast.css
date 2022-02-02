@@ -1,0 +1,37 @@
+.daily-forecast{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    gap:30px;
+    background-color: #181e26;
+    color:white;
+    
+  }
+  .main-info{
+    display: grid;
+    gap:10px;
+    place-items: center;
+    width: 900px;
+    padding:30px;
+    border-bottom: solid 1px rgba(255, 255, 255,0.3);
+  }
+  .temp-info{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap:10px;
+    place-items: center;
+    padding:20px;
+  }
+  .temp-info img{
+    width: 150px;
+  }
+  .date{
+    font-size: 30px;
+  }
+  .mx-temp{
+    font-size: 100px;
+  }
+  .mm-temp{
+    font-size: 60px;
+    color:#85a3c7;
+  }

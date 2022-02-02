@@ -1,0 +1,33 @@
+.search-form{
+    display: grid;
+    grid-template-columns: auto 100px;
+      width: 650px;
+    padding:20px;
+    margin-left: 50px;
+    
+  
+  }
+  .search-form input{
+    width:100%;
+    border: none;
+    border-bottom:solid 1px white;
+    background-color: unset;
+    outline: none;
+    font-size:20px;
+  }
+  .search-form input::placeholder{
+    color:white;
+    padding:10px;
+  }
+  .search-btn{
+    padding:10px;
+    font-size: 15px;
+    width:50px;
+    background-color: unset;
+    border:none;
+    border-bottom: solid 1px white;
+    cursor: pointer;
+  }
+  .fa-search{
+    color:white;
+  }

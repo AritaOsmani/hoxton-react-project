@@ -2,6 +2,7 @@ import React from 'react';
 import AdditionalInfo from './AdditionalInfo/AdditionalInfo';
 import MoonInfo from './MoonInfo';
 import SunInfo from './SunInfo';
+import '../../src/styles/DailyDetails.css'
 
 export default function DailyDetails({ weatherData }) {
     const astroInfo = weatherData.forecast.forecastday[0].astro;

@@ -40,11 +40,26 @@ function App() {
       setSearchedCities(copy)
     })
   }
+
+  function deleteSearchedCity(city) {
+    return fetch(`http://localhost:3001/searched/${city.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => res.json()).then(res => {
+      let copy = JSON.parse(JSON.stringify(searchedCities))
+      copy = copy.filter(item => item.id !== city.id)
+      setSearchedCities(copy)
+    })
+  }
+
+
   return (
     <div className="App">
       <Routes>
         <Route index element={<Navigate replace to='/home' />} />
-        <Route path='/home' element={<Intro setSearch={setSearch} recentList={searchedCities} />}></Route>
+        <Route path='/home' element={<Intro setSearch={setSearch} recentList={searchedCities} deleteSearchedCity={deleteSearchedCity} />}></Route>
         <Route path='/home/:search'
           element={
             <Main

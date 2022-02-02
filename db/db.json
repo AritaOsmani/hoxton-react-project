@@ -1,14 +1,6 @@
 {
   "searched": [
     {
-      "id": 1,
-      "city": "Pristina",
-      "country": "Kosovo",
-      "temp": 0,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/323.png",
-      "text": "Cloudy"
-    },
-    {
       "city": "Pristina",
       "country": "Kosovo",
       "temp": 4,
@@ -19,41 +11,33 @@
     {
       "city": "Tirana",
       "country": "Albania",
-      "temp": 12,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
-      "text": "Sunny",
+      "temp": 6,
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+      "text": "Clear",
       "id": 3
     },
     {
-      "city": "Washington",
-      "country": "United States of America",
-      "temp": -1.1,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/143.png",
-      "text": "Mist",
-      "id": 4
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "temp": 7,
+      "city": "London",
+      "country": "United Kingdom",
+      "temp": 8,
       "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
       "text": "Partly cloudy",
       "id": 5
     },
     {
-      "city": "Texas City",
-      "country": "United States of America",
-      "temp": 15.6,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/248.png",
-      "text": "Fog",
+      "city": "Tokyo",
+      "country": "Japan",
+      "temp": 3,
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+      "text": "Partly cloudy",
       "id": 6
     },
     {
-      "city": "London",
-      "country": "United Kingdom",
-      "temp": 11,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-      "text": "Partly cloudy",
+      "city": "Texas City",
+      "country": "United States of America",
+      "temp": 21.1,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/248.png",
+      "text": "Fog",
       "id": 7
     }
   ]

@@ -1,12 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function RecentSearchItem() {
-    return <li className='recent-search-list-item'>
-        <span className='city-name'>Pristina,Kosovo</span>
+export default function RecentSearchItem({ citySearched, setSearch }) {
+    const navigate = useNavigate()
+    return <li className='recent-search-list-item'
+        onClick={() => {
+            setSearch(citySearched.city)
+            navigate(`/home/${citySearched.city}`)
+        }}>
+        <span className='city-name'>{`${citySearched.city},${citySearched.country}`}</span>
         <div className='recent-search-info'>
-            <span className='recent-current-temp'>0°</span>
-            <img src="//cdn.weatherapi.com/weather/64x64/day/323.png" alt="" />
+            <span className='recent-current-temp'>{`${citySearched.temp}°`}</span>
+            <img src={citySearched.icon} alt="" />
         </div>
-        <span>Cloudy</span>
+        <span>{citySearched.text}</span>
     </li>
 }

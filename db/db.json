@@ -1,0 +1,12 @@
+{
+  "searched": [
+    {
+      "id": 1,
+      "city": "Pristina",
+      "country": "Kosovo",
+      "temp": 0,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/323.png",
+      "text": "Cloudy"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ export default function Main({ search, setSearch, isCelcius, setIsCelcius, searc
     if (weatherData === null) return <h1>Loading...</h1>
 
     return <div className={weatherData.current['is_day'] === 1 ? `main-container day` : `main-container night`}>
-        <MainHeader setSearch={setSearch} />
+        <MainHeader setSearch={setSearch} currentSearch={params.search} />
         {weatherData.alerts.alert.length !== 0 && (weatherData.alerts.alert.map(alert => <Alert alert={alert} />))}
         <CurrentWeather weatherData={weatherData} isCelcius={isCelcius} setIsCelcius={setIsCelcius} />
         <DailyWeather weatherData={weatherData} isCelcius={isCelcius} search={search} />

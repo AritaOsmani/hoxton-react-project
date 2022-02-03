@@ -14,7 +14,7 @@ export default function SearchForm({ setSearch }) {
             navigate(`/home/${searchVal}`)
             event.target.reset()
         }}>
-        <input name='search' type="text" placeholder='Search for a city...' required />
+        <input name='search' type="text" placeholder='Search for a city...' required autoComplete='off' />
         <button className='search-btn'><i className="fal fa-search"></i></button>
     </form>
 }

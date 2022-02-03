@@ -11,8 +11,16 @@
   margin-top:5px;
   cursor: pointer;
 }
+.fa-redo{
+  place-self: center;
+ margin-top:10px;
+ font-size: 17px;
+ cursor: pointer;
+}
 .header-form{
   display: grid;
+  grid-auto-flow: column;
+  gap:30px;
   place-content: center;
   justify-self: end;
   padding:0 60px;

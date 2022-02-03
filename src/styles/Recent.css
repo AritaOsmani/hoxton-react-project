@@ -75,3 +75,89 @@
   .city-name{
     font-size: 15px;
   }
+
+
+  @media screen and (max-width:1000px){
+    .recent-container{
+      
+      place-self:start;
+      width: 900px;
+    }
+    .recent-searches-list{
+      display: grid;
+      grid-template-columns: repeat(3,220px);
+    }
+  }
+
+  @media screen and (max-width:900px){
+    .recent-container{
+      width:700px;
+      place-self:start;
+      margin-left:50px;
+    }
+    .recent-searches-list{
+      display: grid;
+      grid-template-columns: repeat(3,220px);
+    }
+  }
+  @media screen and (max-width:800px){
+    .recent-container{
+      width:600px;
+      margin:0;
+      place-self: center;
+    }
+    .recent-searches-list{
+      display: grid;
+      grid-template-columns: repeat(3,150px);
+    }
+    .city-name{
+      font-size:14px;
+    }
+  }
+  @media screen and (max-width:700px){
+    .recent-container{
+      width:500px;
+      margin:0;
+      place-self: center;
+    }
+    .recent-searches-list{
+      display: grid;
+      grid-template-columns: repeat(2,200px);
+    }
+  }
+  @media screen and (max-width:500px){
+    .recent-container{
+      width:400px;
+      margin:0;
+      place-self: start;
+    }
+    .recent-title{
+      font-size:20px;
+    }
+    .recent-searches-list{
+      display: grid;
+      grid-template-columns: repeat(3,100px);
+      height:200px;
+    }
+    .recent-search-list-item{
+      display: grid;
+      grid-template-rows: auto 12px auto auto;
+      padding:0 5px;
+    }
+    .city-name{
+      font-size:12px;
+    }
+    .recent-searches-list{
+      height:200px;
+    }
+    .recent-serch-info{
+      width:20px;
+      height:20px;
+    }
+    .recent-text{
+      font-size:13px;
+    }
+    .recent-current-temp{
+      font-size: 12px;
+    }
+  }

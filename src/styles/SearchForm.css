@@ -31,3 +31,17 @@
   .fa-search{
     color:white;
   }
+
+  @media screen and (max-width:900px){
+    .search-form{
+      width:500px;
+    }
+  }
+  @media screen and (max-width:500px){
+    .search-form{
+      width:400px;
+    }
+    .search-form input{
+      font-size:14px;
+    }
+  }

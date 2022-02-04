@@ -46,3 +46,8 @@
     color:red;
   }
   
+  @media screen and (max-width:900px){
+    .current-container{
+      width:600px;
+    }
+  }

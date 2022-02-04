@@ -1,14 +1,6 @@
 {
   "searched": [
     {
-      "city": "Pristina",
-      "country": "Kosovo",
-      "temp": 4,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
-      "text": "Partly cloudy",
-      "id": 2
-    },
-    {
       "city": "Tirana",
       "country": "Albania",
       "temp": 6,
@@ -25,20 +17,36 @@
       "id": 5
     },
     {
+      "city": "Pristina",
+      "country": "Kosovo",
+      "temp": -3,
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+      "text": "Partly cloudy",
+      "id": 12
+    },
+    {
       "city": "Texas City",
       "country": "United States of America",
-      "temp": 21.1,
-      "icon": "//cdn.weatherapi.com/weather/64x64/day/248.png",
-      "text": "Fog",
-      "id": 7
+      "temp": 7.2,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      "text": "Overcast",
+      "id": 13
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "temp": 4,
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+      "text": "Partly cloudy",
+      "id": 14
     },
     {
       "city": "Brussels",
       "country": "Belgium",
       "temp": 9,
-      "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
       "text": "Partly cloudy",
-      "id": 9
+      "id": 15
     }
   ]
 }

@@ -40,3 +40,13 @@
 .header-form input::placeholder{
   color:white;
 }
+
+@media screen and (max-width:900px){
+  .main-header{
+    /* width: 75%; */
+  }
+  .header-form{
+    margin:0;
+    margin-left:20px ;
+  }
+}

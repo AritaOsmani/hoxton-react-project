@@ -21,7 +21,7 @@ export default function Main({ search, setSearch, isCelcius, setIsCelcius, searc
         })
     }, [params.search])
 
-
+    console.log(weatherData)
 
     useEffect(() => {
         if (search === '') {

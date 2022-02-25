@@ -6,6 +6,7 @@ import '../../src/styles/DailyDetails.css'
 
 export default function DailyDetails({ weatherData }) {
     const astroInfo = weatherData.forecast.forecastday[0].astro;
+    console.log('astroInfo: ', astroInfo)
     const currentData = weatherData.current;
     return <div className='dailyDetails-container'>
         <h2>Daily Details</h2>

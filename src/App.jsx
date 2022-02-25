@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { API_URL } from '../config'
 import './App.css'
 import DayForecast from './pages/DayForecast'
 import Intro from './pages/Intro'
@@ -13,12 +14,12 @@ function App() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:3001/searched`).then(res => res.json()).then(city => setSearchedCities(city))
+    fetch(`${API_URL}/searched`).then(res => res.json()).then(city => setSearchedCities(city))
   }, [])
 
 
   function deleteSearchedCity(city) {
-    return fetch(`http://localhost:3001/searched/${city.id}`, {
+    return fetch(`${API_URL}/searched/${city.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -32,7 +33,7 @@ function App() {
   function addNewSearchedCity(city, country, temp, icon, text) {
     const match = searchedCities.find(item => item.city === city)
     if (match) return
-    return fetch(`http://localhost:3001/searched`, {
+    return fetch(`${API_URL}/searched`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

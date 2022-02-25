@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import Alert from '../components/Alert';
 import DailyDetails from '../components/DailyDetails';
 import HourlyWeather from '../components/HourlyWeather';
